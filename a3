@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue; 
+  height:200 
+  margin:auto;
+
+  
+}
+.myDiv2 {
+  border: 2px outset lightgreen;
+  background-color: blue;  
+  float:; 
+  height:230 ;
+  width: 230; 
+  margin:auto;
+}
+.myDiv3 {
+  border: 2px outset lightgreen;
+  background-color: blue;    
+  text-align:;
+  height:230 ;
+  width: 230;
+  float:right; 
+  margin:auto;
+  padding:;
+
+  
+}
+
+</style>
+
+<h1><center> NYC is the place!</center></p>
+<div class="myDiv">
+  
+<spam>
+<img src="nyc.pic" class="mydiv2">
+Some text
+
+<img src="nyc.pic" class="mydiv3">
+
+
+
+</div>
+
+
+</html>
+</body>
