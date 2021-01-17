@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Jan13.css">
+    <title></title>
+  </head>
+  <body>
+
+<style>
+
+
+/*CSS Slide Show */
+
+.bigbox{
+  background:lightyellow;
+  width: 100%;
+  height: 5000px;
+  border: solid blue;
+}
+
+
+
+.frame {
+  width:100%;
+  height: 35px;
+  border: 2px solid red;
+  overflow: hidden;
+
+}
+
+.slidegroup{
+width: 400%;
+height: 100%;
+animation: slide 0s infinite;
+--animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+0%  { margin-right: 0%; }
+
+30% { margin-left: -100%; }
+
+70% {  margin-left: -200%;}
+
+}
+
+
+.slide {
+  color:white;
+  background-color: green;
+  width: 25%;
+  height: 100%;
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 1px;
+}
+.slide2 {
+  color:white;
+  background-color: lightgreen;
+  width: 25%;
+  height: 100%;
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 1px;
+}
+
+.slide3 {
+  background-color: yellow;
+  width: 25%;
+  height: 100%;
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 1px;
+}
+
+
+.pic1 {
+
+  width: 100%;
+  height:100%;
+}
+
+  .slide:nth-child(1){
+  background-image: url("1.jpg");
+  background-size: 100% 100%;
+  }
+
+  .slide:nth-child(2){
+  background-image: url("3.jpg");
+  background-size: 100% 100%;
+  }
+  .slide:nth-child(3){
+    background-image: url("4.jpg");
+    background-size: 100% 100%;
+  }
+
+  .slide:nth-child(4){
+  background-image: url("5.jpg");
+  background-size: 100% 100%;
+  }
+
+
+
+
+  .inside1 {
+    width: 80%;
+    height: 20%;
+    position: relative;
+    animation: mymove 0s infinite;
+    animation-timing-function: linear;
+    border: ;
+  }
+
+  @keyframes mymove {
+    0%   {top: 0px;}
+  25%  {top: 70px;}
+  75%  {top: 0px}
+  100% {top: 0px}
+
+}
+
+.inside2 {
+  margin-left: 17%;
+  width: 50%;
+  height: 20%;
+  position: relative;
+  animation: move2 0s infinite;
+  animation-timing-function: linear;
+  border: ;
+}
+
+@keyframes move2 {
+  0%   {top: 0px;}
+25%  {top: -70px;}
+75%  {top: 0px}
+100% {top: 0px}
+}
+
+  .box{
+width: 100%;
+height: 120px;
+border: solid red;
+}
+
+.heading1{
+  color: darkgreen;
+  font-family:"monotype corsiva";
+}
+
+
+
+@keyframes zoom {
+    0% {transform: scale(0.1,0.1);  }
+    50% {transform: scale(1.5,1.5);}
+    100% {transform: scale(0.1,0.1);}
+}
+.inside3{
+  border: solid green ;
+  border-radius: 25px;
+  margin: 3%;
+  float: left;
+  width: 10%;
+  height: 10%;
+  animation: zoom 0s infinite;
+  animation-timing-function: linear;
+}
+
+
+.picturebox{
+  position: relative;
+  width: 100%;
+  height: 10%;
+
+}
+
+.graybox{
+  width: 40%;
+  height:30%;
+  margin-left: 10%;
+  bottom: 550px;
+  right: 20px;
+position: relative;
+background-color: gray;
+border: solid white;
+margin-top: 30%;
+
+}
+
+.picturebox2{
+  float: left;
+  border: solid green;
+  margin-top: 5%;
+  margin-left: 5%;
+  position: relative;
+  width: 40%;
+  height: 5%;
+}
+
+.yellowbox{
+  color: white;
+  width: 80%;
+  height:700%;
+  margin-left: 10%;
+  bottom: 250px;
+  right: 20px;
+position: relative;
+border: solid yellow;
+margin-top: 30%;
+}
+
+.pinkbox{
+  margin-top: 5%;
+  margin-left: 55%;
+  width: 40%;
+  height: 70%;
+  background-color: lightpink;
+}
+
+.bridge1{
+  border: solid pink;
+width: 100%;
+height:5%;
+}
+
+
+
+
+
+
+.mainwindow{
+}
+
+.click{
+   background-color: black;
+   color: white;
+   padding: 4px;
+   text-decoration: none;
+}
+
+.modalwindow{
+   position: fixed;
+   top:0px;
+   bottom: 0px;
+   right: 0px;
+   left: 0px;
+  background-color: lightblue;
+   opacity: 0;
+   pointer-events:none;
+}
+
+.modalwindow2{
+   position:fixed;
+   top:0px;
+   bottom: 0px;
+   right: 0px;
+   left: 0px;
+  background-color: red;
+   opacity: 0;
+   pointer-events:none;
+}
+
+
+.modalwindow:target{
+   opacity: 0.95;
+   pointer-events:all;
+}
+.modalwindow2:target{
+   opacity: 0.95;
+   pointer-events:all;
+}
+
+.msgblock {
+  position: relative;
+  width: 70%;
+  background-color: orange;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.msgblock2 {
+  position: relative;
+  width: 70%;
+  background-color: pink;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.msgblock img {
+  width: 30%;
+}
+.right{
+float: right;
+}
+
+.block1{
+  border: solid green;
+margin: auto;
+border: ;
+height: 10%;
+}
+
+.block2{
+margin-left: 8%;
+margin-right: 2%;
+float: left;
+width: 25%;
+border: solid yellow;
+height: 60% ;
+}
+
+.block3{
+margin-right: 2%;
+ float: left;
+width: 25%;
+border: solid blue;
+height: 60%;
+}
+
+.insideblock1{
+backgound-color: pink;
+text-color: white;
+height: 100;
+}
+
+.firstimage{
+  margin: 3%;
+  height: 50%;
+  width: 30%;
+}
+
+
+
+.modalwindow3{
+   position:fixed;
+   top:0px;
+   bottom: 0px;
+   right: 0px;
+   left: 0px;
+  background-color: red;
+   opacity: 0;
+   pointer-events:none;
+}
+.modalwindow3:target{
+   opacity: 0.95;
+   pointer-events:all;
+}
+.msgblock3 {
+  position: relative;
+  width: 70%;
+  background-color: pink;
+  margin: auto;
+  margin-top: 5%;
+}
+.block4{
+ float: left;
+width: 25%;
+border: solid blue;
+height: 60%;
+}
+
+.second{
+color: green;
+
+}
+
+.temporal{
+  border: solid red;
+  width: 75%;
+  height: 8%;
+}
+
+.inimage1{
+  margin-left: 2%;
+  float:left;
+  border: solid red;
+  width:40%;
+  height:95%;
+}
+ .inbridge{
+   border: solid red;
+   width:100%;
+   height:50%
+ }
+ .ingray{
+   background-color: lightgray;
+   margin-top: 2%;
+   border: solid red;
+   width:100%;
+   height:23%;
+ }
+ .whiteline{
+   margin-left: 5%;
+   width:80%;
+   height:0.8%;
+   background-color: white;
+ }
+ .grayline{
+   margin-left: 5%;
+   width:80%;
+   height:0.8%;
+   background-color: gray;
+ }
+
+
+
+
+
+</style>
+<div class="bigbox">
+
+
+
+
+
+  <!--CSS Slide Show  h4/img-->
+
+<div class="box">
+
+  <div class="zoom">
+  <img src="project2p1.pic" class="inside3">
+  </div>
+
+
+<div class="mymove">
+  <div class="inside1"><h1 class= "heading1"> Josefina Body Care Collection </h1></div>
+</div>
+
+<div class="move2">
+  <div class="inside2"><strong>Discover the exotic sensation of all seasons</strong></div>
+</div>
+
+
+</div>
+
+
+<div class="frame">
+
+ <div class="slidegroup">
+    <div class="slide">Today only! $5.99  Into the night body care.</div>
+
+    <div class="slide2">Free shipping and Handling</div>
+
+    <div class="slide3">The best prices that can be offered! </div>
+
+
+ </div>
+
+</div>
+
+<div class="picturebox"><img src="project2p2.pic" alt="Snow" style="width:100%;">
+<div class="graybox">
+
+<p>A 100% natural, unique dry oil that nourishes the skin. Enriched with nourishing herbs, specifically put together according to the Ayurvedic tradition for the Vata Dosha. With nourishing sweet almond oil and basil.</p>
+
+</div></div><br>
+
+<div class="bridge1">
+
+<div class="picturebox2"><img src="project2p3.pic" alt="Snow" style="width:100%;">
+<div class="yellowbox">
+
+<p>Unique blend Containing antioxidants, vitamin E and the ingredient Centelle asiatica.</p>
+
+</div></div>
+
+<div class="pinkbox">
+  <center><p><strong>Streng your skin</strong><br> Special technology makes this whipped cream easy to apply while it is rich and vevelty formlation nourishes your skin.</p></center>
+</div>
+
+</div>
+
+<h4> Josefina Body lotion</h4>
+<hr>
+
+
+<div class=block1>
+
+<br>
+<!--CSS Modal WINDOW 3-->
+<!--Modal Window Part1- button/link-->
+<div class=block2>
+<center>
+  <abbr title="Hyper Text Markup Language"><img src="project2p4.pic" class="firstimage"></abbr>
+  <p class="second"> The ritual of sakura<p>
+ <h2> <center>Cherry hand lotion<center></h2>
+ <p> Body cream, 70 ml</p>
+ <p>$12.50</p>
+<div class="mainwindow">
+<a href="#open" class="click">Add to bag</a>
+</center>
+</div>
+
+<!--Modal Window Part3- Modal Window-->
+<div id="open" class="modalwindow">
+   <div class="msgblock">
+  <div class="right"> <a href="#" >X</a> </div>
+    <center><h1>Cherry Hand lotion </h1>
+    <img src="iceland2.pic" class="firstimage">
+    <p>This is a Iceland1 window</p>
+     </center>
+
+   </div>
+</div>
+
+
+
+<!--CSS Modal WINDOW 2-->
+<!--Modal Window Part1- button/link-->
+<div class=block3>
+<center>
+  <abbr title="Hyper Text Markup Language"><img src="project2p5.pic" class="firstimage"></abbr>
+  <p class="second"> The ritual of Ayurdeva<p>
+ <h2> <center>Himalaya honey Cream<center></h2>
+ <p> Body cream, 70 ml</p>
+ <p>$7.50</p>
+<div class="mainwindow">
+<a href="#open2" class="click">Add to bag</a>
+</center>
+</div>
+
+<!--Modal Window Part3- Modal Window-->
+<div id="open2" class="modalwindow2">
+   <div class="msgblock3">
+  <div class="right"> <a href="#" >X</a> </div>
+    <center><h1>Iceland </h1>
+    <img src="iceland2.pic" class="firstimage">
+    <p>This is a Iceland2 window</p>
+     </center>
+
+   </div>
+</div>
+
+
+<!--CSS Modal WINDOW 3-->
+<!--Modal Window Part1- button/link-->
+<div class=block4>
+<center>
+  <abbr title="Hyper Text Markup Language"><img src="project2p6.pic" class="firstimage"></abbr>
+  <p class="second"> The ritual of sakura<p>
+ <h2> <center>Organic rice cream<center></h2>
+ <p> Body cream, 70 ml</p>
+ <p>$7.50</p>
+<div class="mainwindow">
+<a href="#open3" class="click">Add to bag</a>
+</center>
+</div>
+
+<!--Modal Window Part3- Modal Window-->
+<div id="open3" class="modalwindow3">
+   <div class="msgblock3">
+  <div class="right"> <a href="#" >X</a> </div>
+  <p><strong> Its in the bag!</strong></p>
+  <div class="grayline"></div><br>
+  <div class="inbridge">
+   <img src="nyc.pic" class="inimage1">
+  <p> The ritual of sakura </p>
+  <h5> Cherry lotion</h5>
+  <p>Body cream, 70 ml</p>
+  <p>$12.50</p>
+  <p>Mix and match</p>
+  </div>
+  <div class="ingray">
+  <p> Nurture and comfort skin from top to toe with The Ritual of Sakura Body Cream from Rituals.</p>
+  <div class="whiteline"  > </div>
+  <center><a href="http://www.example.com"><button>Continue Shopping</button></a><center>
+  </div>
+    
+
+   </div>
+</div>
+</div>
+
+
+<div class="temporal">
+  <p><strong> Its in the bag!</strong></p>
+ <div class="grayline"></div><br>
+ <div class="inbridge">
+   <img src="nyc.pic" class="inimage1">
+<p> The ritual of sakura </p>
+<h5> Cherry lotion</h5>
+<p>Body cream, 70 ml</p>
+<p>$12.50</p>
+<p>Mix and match</p>
+</div>
+<div class="ingray">
+  <p> Nurture and comfort skin from top to toe with The Ritual of Sakura Body Cream from Rituals.</p>
+<div class="whiteline"  > </div>
+<center><a href="http://www.example.com"><button>Continue Shopping</button></a><center>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+</div>
+  </body>
+</html>
