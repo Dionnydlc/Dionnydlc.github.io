@@ -2,7 +2,7 @@ let lucasHeight;
 let lucasMass;
 let lucasBMI;
 let johnHeight;
-let johnHeight;
+let johnMass;
 let johnBMI;
 
 lucasHeigh = 1.88;
