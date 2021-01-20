@@ -5,7 +5,7 @@ let johnHeight;
 let johnMass;
 let johnBMI;
 
-lucasHeigh = 1.88;
+lucasHeight = 1.88;
 lucasMass = 95;
 lucasBMI = lucasMass / lucasHeight ** 2;
 
