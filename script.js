@@ -16,4 +16,4 @@ johnBMI = johnMass / johnHeight ** 2;
 let lucasHigherBMI = Boolean(lucasBMI > johnBMI);
 
 
-console.log("Lucas and John are friends, Lucas is " + lucasHeigh + "m tall and John is " + johnHeigh + "m tall. So John has higher BMi than Lucas, that is " + lucasHigherBMI);
+console.log("Lucas and John are friends, Lucas is " + lucasHeight + "m tall and John is " + johnHeigh + "m tall. So John has higher BMi than Lucas, that is " + lucasHigherBMI);
