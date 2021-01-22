@@ -52,16 +52,15 @@ let temp2;
 function celsiusToFahrenheit(temp) {
     let newTemp = (1.8 * temp) + 32;
     return (newTemp)
-    console.log(newTemp);
+  
 }
 
 function fahrenheitToCelsius(temp2) {
     let newTemp2 = (temp2 - 32) * (5 / 9);
     return (newTemp2)
-    console.log(newTemp2);
+    
 }
 
-celsiusToFahrenheit(100);
-
-fahrenheitToCelsius(50);
+console.log(celsiusToFahrenheit(100));
+console.log(fahrenheitToCelsius(50));
 
